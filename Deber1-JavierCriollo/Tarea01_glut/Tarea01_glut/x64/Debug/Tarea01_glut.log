@@ -1,0 +1,6 @@
+﻿  main.cpp
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Tarea01_glut\Tarea01_glut\main.cpp(99,22): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Tarea01_glut\Tarea01_glut\main.cpp(99,17): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Tarea01_glut\Tarea01_glut\main.cpp(99,12): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Tarea01_glut\Tarea01_glut\main.cpp(112,22): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
+  Tarea01_glut.vcxproj -> C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Tarea01_glut\x64\Debug\Tarea01_glut.exe
