@@ -1,6 +1,0 @@
-﻿  Tetera.cpp
-C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Tarea01_Ejemplo_glfw\Tarea01_Ejemplo_glfw\Tetera.cpp(99,22): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Tarea01_Ejemplo_glfw\Tarea01_Ejemplo_glfw\Tetera.cpp(99,17): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Tarea01_Ejemplo_glfw\Tarea01_Ejemplo_glfw\Tetera.cpp(99,12): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Tarea01_Ejemplo_glfw\Tarea01_Ejemplo_glfw\Tetera.cpp(112,22): warning C4305: 'argumento': truncamiento de 'double' a 'GLfloat'
-  Tarea01_Ejemplo_glfw.vcxproj -> C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Tarea01_Ejemplo_glfw\x64\Debug\Tarea01_Ejemplo_glfw.exe
