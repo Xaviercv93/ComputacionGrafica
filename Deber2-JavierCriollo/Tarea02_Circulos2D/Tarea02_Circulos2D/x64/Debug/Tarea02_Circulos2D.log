@@ -1,10 +1,10 @@
 ﻿  Main.cpp
-C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(5,10): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
-C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(13,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(24,19): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(32,15): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(31,15): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(47,19): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(55,15): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
-C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(54,15): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(8,10): warning C4305: 'inicializando': truncamiento de 'double' a 'float'
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(26,21): warning C4244: 'inicializando': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(39,19): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(50,15): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(49,15): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(65,19): warning C4244: '=': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(73,15): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(72,15): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
   Tarea02_Circulos2D.vcxproj -> C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\x64\Debug\Tarea02_Circulos2D.exe
