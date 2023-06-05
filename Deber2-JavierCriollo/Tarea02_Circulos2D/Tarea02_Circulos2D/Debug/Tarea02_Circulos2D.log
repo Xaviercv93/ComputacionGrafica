@@ -1,0 +1,7 @@
+﻿  Main.cpp
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(21,19): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(21,16): warning C4244: 'argumento': conversión de 'int' a 'GLfloat'; posible pérdida de datos
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(24,56): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(24,16): warning C4244: 'argumento': conversión de 'double' a 'GLfloat'; posible pérdida de datos
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Tarea02_Circulos2D\Main.cpp(42,22): warning C4305: 'argumento': truncamiento de 'double' a 'float'
+  Tarea02_Circulos2D.vcxproj -> C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Deber2-JavierCriollo\Tarea02_Circulos2D\Debug\Tarea02_Circulos2D.exe
