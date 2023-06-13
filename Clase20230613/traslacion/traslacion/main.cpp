@@ -5,6 +5,9 @@ void reshape(GLint w, GLint h);
 void initGL();
 void display3D();
 void dibujarCubo();
+void timer(int valor);
+
+int refreshRate = 5;//variable tipica de los scripts
 
 float rotAng = 0.0f;
 int main(int argc, char** argv)
@@ -18,7 +21,7 @@ int main(int argc, char** argv)
     glutDisplayFunc(display3D);//no se puede mandar paramatros porque es puntero funcion
     glutReshapeFunc(reshape);
 
-    //glutTimerFunc(0,timer,0);//el tiempo en el que llame
+    glutTimerFunc(0, timer, 0);//el tiempo en el que llame
 
     initGL();
     glutMainLoop();
@@ -71,7 +74,7 @@ void display3D() {//no se puede mandar paramatros porque es puntero funcion
     glutSwapBuffers();
     rotAng += 0.02f;
     // display3D();//para no dar click
-    glutPostRedisplay();
+    // glutPostRedisplay();
 }
 
 
@@ -79,6 +82,8 @@ void timer(int valor)
 {
 
     glutPostRedisplay();//forzando a que se redibuje la pantalla
+    glutTimerFunc(refreshRate, timer, 0);//refreshtimer es un int cada cuando debe refrescarse
+
 }
 
 //en teoria no importa en que orden coloco las caras, la correccion de profundidad nos ayuda
