@@ -17,10 +17,15 @@ int main(int argc, char** argv)
 
     glutDisplayFunc(display3D);//no se puede mandar paramatros porque es puntero funcion
     glutReshapeFunc(reshape);
+
+    //glutTimerFunc(0,timer,0);//el tiempo en el que llame
+
     initGL();
     glutMainLoop();
 
 }
+
+
 
 void reshape(GLint w, GLint h) {
     glViewport(0, 0, w, h);
@@ -66,8 +71,15 @@ void display3D() {//no se puede mandar paramatros porque es puntero funcion
     glutSwapBuffers();
     rotAng += 0.02f;
     // display3D();//para no dar click
+    glutPostRedisplay();
 }
 
+
+void timer(int valor)
+{
+
+    glutPostRedisplay();//forzando a que se redibuje la pantalla
+}
 
 //en teoria no importa en que orden coloco las caras, la correccion de profundidad nos ayuda
 void dibujarCubo()
