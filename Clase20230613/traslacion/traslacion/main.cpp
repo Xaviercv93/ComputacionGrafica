@@ -1,3 +1,4 @@
+
 #include <iostream>
 #include <GL/freeglut.h>
 
@@ -29,6 +30,14 @@ int main(int argc, char** argv)
 }
 
 
+void timer(int valor)
+{
+
+    glutPostRedisplay();//forzando a que se redibuje la pantalla
+    glutTimerFunc(refreshRate, timer, 0);//refreshtimer es un int cada cuando debe refrescarse
+
+}
+
 
 void reshape(GLint w, GLint h) {
     glViewport(0, 0, w, h);
@@ -51,7 +60,7 @@ void display3D() {//no se puede mandar paramatros porque es puntero funcion
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glMatrixMode(GL_MODELVIEW);
     glLoadIdentity();
-    gluLookAt(9, 9, 9, 0, 0, 0, 0, 1, 0); //camara en 5,5,5 apunta al 0,0,0 y el vector hacia arriba es 0,1,0
+    gluLookAt(0, 9, 9, 0, 0, 0, 0, 1, 0); //camara en 5,5,5 apunta al 0,0,0 y el vector hacia arriba es 0,1,0
 
     //grafico objeto nuevo
     //para colocar en coordenadas de mundo toca trasladar
@@ -72,19 +81,11 @@ void display3D() {//no se puede mandar paramatros porque es puntero funcion
     glPopMatrix();
 
     glutSwapBuffers();
-    rotAng += 0.02f;
-    // display3D();//para no dar click
-    // glutPostRedisplay();
+    rotAng += 0.1f;
+    //display3D();//para no dar click
+    //glutPostRedisplay();
 }
 
-
-void timer(int valor)
-{
-
-    glutPostRedisplay();//forzando a que se redibuje la pantalla
-    glutTimerFunc(refreshRate, timer, 0);//refreshtimer es un int cada cuando debe refrescarse
-
-}
 
 //en teoria no importa en que orden coloco las caras, la correccion de profundidad nos ayuda
 void dibujarCubo()
