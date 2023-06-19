@@ -11,13 +11,14 @@ void timer(int valor);
 void keyDown(int key, int, int);
 void keyUp(int key, int, int);
 
+void mouse(int button, int state, int x, int y);
 
 void spinDisplayIzq();
 void spinDisplayDer();
 
 int refreshRate = 5;//variable tipica de los scripts
 
-float rotAng = 0.0f;
+float rotAng = 0.0f, spin = 0.0f;
 
 bool iskey = false, ismouse = false;//verifica si la tecla esta presionada con iskey
 bool isFirts = true;
@@ -36,6 +37,8 @@ int main(int argc, char** argv)
 
     glutSpecialFunc(keyDown);
     glutSpecialUpFunc(keyUp);
+
+    glutMouseFunc(mouse);//funcion mouse que llama a las display igual que las keydown y keyup
 
     //para que funcione con teclado paramos el timer y redibujar
     glutTimerFunc(0, timer, 0);//el tiempo en el que llame
@@ -80,9 +83,18 @@ void spinDisplayIzq() {
     //calculamos la posicion y luego hacemos un translate
     //si esta presionado la tecla
     if (iskey)
-        posx -= 0.05f;
+        posx -= 0.005f;
     //hago un redisplay
     glutPostRedisplay();
+
+    if (ismouse) {
+
+        spin -= 0.2;//variable que le haga mover
+        if (spin > 360) {
+            spin -= 360;
+        }
+
+    }
 
 
 }
@@ -90,12 +102,52 @@ void spinDisplayDer() {
     //calculamos la posicion y luego hacemos un translate
     //si esta presionado la tecla
     if (iskey)
-        posx += 0.05f;
+        posx += 0.005f;
     //hago un redisplay
     glutPostRedisplay();
 
+    if (ismouse) {
+
+        spin += 0.2;//variable que le haga mover
+        if (spin > 360) {
+            spin -= 360;
+        }
+
+    }
+
 
 }
+
+void mouse(int button, int state, int x, int y) {//recive el boton presionado, el estado si se esta moviendo, la posicion x y y del puntero
+    switch (button) {
+    case GLUT_LEFT_BUTTON:
+        if (state == GLUT_DOWN) {
+            ismouse = true;
+            glutIdleFunc(spinDisplayIzq);
+
+        }
+        else if (state == GLUT_UP) {
+            ismouse = false;
+            glutIdleFunc(NULL);
+        }
+        break;
+    case GLUT_RIGHT_BUTTON:
+        if (state == GLUT_DOWN) {
+            ismouse = true;
+            glutIdleFunc(spinDisplayDer);
+
+        }
+        else if (state == GLUT_UP) {
+            ismouse = false;
+            glutIdleFunc(NULL);
+        }
+        break;
+    default:
+        break;
+    }
+
+}
+
 void keyDown(int key, int, int) {
     switch (key) {
     case GLUT_KEY_LEFT:
@@ -156,13 +208,15 @@ void display3D() {//no se puede mandar paramatros porque es puntero funcion
     glPushMatrix();
     glTranslatef(-3.0f, 0.0f, 0.0f);
     glScalef(1.5f, 1.5f, 1.5f);//escalamos para ver la diferencia por tamaño entre los 2 cubos 
+    if (ismouse)
+        glRotatef(spin, 0, 0, 1);
     //glRotatef(45.0f, 0, 0, 1);
     glRotatef(rotAng, 0, 0, 1);
     dibujarCubo();
     glPopMatrix();
 
     glutSwapBuffers();
-    rotAng += 0.005f;
+    rotAng += 0.05f;
     //display3D();//para no dar click
     //glutPostRedisplay();
 

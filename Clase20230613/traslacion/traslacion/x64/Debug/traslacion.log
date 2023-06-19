@@ -1,2 +1,4 @@
 ﻿  main.cpp
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Clase20230613\traslacion\traslacion\main.cpp(92,20): warning C4305: '-=': truncamiento de 'double' a 'float'
+C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Clase20230613\traslacion\traslacion\main.cpp(111,20): warning C4305: '+=': truncamiento de 'double' a 'float'
   traslacion.vcxproj -> C:\Users\JDEV\Documents\GitHub\ComputacionGrafica\Clase20230613\traslacion\x64\Debug\traslacion.exe
