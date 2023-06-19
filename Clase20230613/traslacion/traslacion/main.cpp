@@ -38,7 +38,7 @@ int main(int argc, char** argv)
     glutSpecialUpFunc(keyUp);
 
     //para que funcione con teclado paramos el timer y redibujar
-    //glutTimerFunc(0, timer, 0);//el tiempo en el que llame
+    glutTimerFunc(0, timer, 0);//el tiempo en el que llame
 
     initGL();
     glutMainLoop();
@@ -61,7 +61,6 @@ void reshape(GLint w, GLint h) {
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     gluPerspective(60.0f, 1, 5, 100);
-    //timer(10);
 }
 
 //es mejor tenerlo como funcion porque luego usamos para inicializar varias cosas, como la correccion de profundidad
