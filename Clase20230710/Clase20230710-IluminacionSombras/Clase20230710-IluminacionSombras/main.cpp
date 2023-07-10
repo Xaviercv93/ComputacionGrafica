@@ -10,7 +10,7 @@ int main(int argc, char ** argv) {
 	glutInitWindowSize(600,400);
 	glutInitWindowPosition(100,100);
 
-	glutCreateWindow("Ejemplo Iluminacion");
+	glutCreateWindow("Ejemplo Iluminación");
 	
 	initGL();
 
@@ -25,4 +25,11 @@ int main(int argc, char ** argv) {
 void reshape(int w, int h) {
 	glViewport(0, 0, w, h);
 
+	glMatrixMode(GL_PROJECTION);
+	glLoadIdentity();
+	//glOrtho();
+	gluOrtho2D(-6,6,-4,4);// esto debe depender de w y h
+
+	glMatrixMode(GL_MODELVIEW);
+	glLoadIdentity();
 }
